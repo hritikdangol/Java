@@ -1,3 +1,4 @@
+package WEEK5;
 class SameLocationException extends RuntimeException{
     SameLocationException(String message){
         super(message);
