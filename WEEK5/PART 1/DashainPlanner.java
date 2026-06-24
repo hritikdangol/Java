@@ -1,4 +1,3 @@
-package WEEK5;
 import java.util.List;
 class DashainFestivalPlanner {
     public static void executeFestivalPlan(List<FestivalActivity> activities) {

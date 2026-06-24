@@ -1,5 +1,3 @@
-package WEEK5;
-
 class FestivalplanningException extends Exception{
     FestivalplanningException(String message){
         super(message);

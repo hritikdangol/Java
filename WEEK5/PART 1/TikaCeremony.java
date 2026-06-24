@@ -1,4 +1,3 @@
-package WEEK5;
 class InvalidGuestCountException extends RuntimeException {
     public InvalidGuestCountException(String message) {
         super(message);
@@ -39,12 +38,26 @@ class TikaCeremony extends FestivalActivity {
 
     public static void main(String[] args) {
 
-        TikaCeremony t1 = new TikaCeremony(10, "Grandfather", 3000);
+        TikaCeremony t1 = new TikaCeremony(10, "Grandfather", 3000); 
+    TikaCeremony t2 = new TikaCeremony(3, "Grandmother", 3000);  
+    TikaCeremony t3 = new TikaCeremony(10, "Father", 60000);      
 
-        try {
-            t1.planActivity();
-        } catch (InvalidGuestCountException | BudgetExceededException e) {
-            System.err.println(e.getMessage());
-        }
+    try {
+        t1.planActivity();
+    } catch (InvalidGuestCountException | BudgetExceededException e) {
+        System.out.println(e.getMessage());
     }
-}
+
+    try {
+        t2.planActivity();
+    } catch (InvalidGuestCountException | BudgetExceededException e) {
+        System.out.println(e.getMessage());
+    }
+
+    try {
+        t3.planActivity();
+    } catch (InvalidGuestCountException | BudgetExceededException e) {
+        System.out.println(e.getMessage());
+    }
+         }      
+    }
