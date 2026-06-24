@@ -19,5 +19,3 @@ class TourismReportGenerator{
        
     }
 }
-$ git config --global user.name "Hrithik Dangol"
-$ git config --global user.email hritikdangol@gmail.com
