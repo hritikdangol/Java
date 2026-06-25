@@ -15,7 +15,7 @@ class HotelRegistrationsDataSource extends TouristDataSource{
         throw new AuthenticationFailedException("Hotel API authentication failed! Did someone forget the password again?");
     }
     else 
-        return List.of("Guest: Ram Thapa, NP Hotel: Yak & Yeti");
+        return List.of("Guest: Lashang , NP Hotel: Yak & Yeti");
   }
   public static void main(String[] args){
     HotelRegistrationsDataSource h1= new HotelRegistrationsDataSource();
