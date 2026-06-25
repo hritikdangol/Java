@@ -15,7 +15,7 @@ List<String> fetchData() throws DataSourceAccessException {
         throw new ConnectionLostException("Airport data connection lost! Maybe a pigeon sat on the antenna?");
     }
     else
-    return List.of("Visitor: John Doe, USA", "Visitor: Emily White, UK");
+    return List.of("Visitor: John Doe, USA");
 }
 public static void main(String[] args){
     AirportArrivalsDataSource a1= new AirportArrivalsDataSource();

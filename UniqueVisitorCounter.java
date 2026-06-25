@@ -16,8 +16,7 @@ class UniqueVisitorCounter implements DataProcessor {
         Map<String, String> map = new HashMap<>();
         for (int i = 0; i < rawData.size(); i++) {
             String data = rawData.get(i);
-            String name = data.split(",")[0]
-                    .replace("Visitor: ", "");
+            String name = data.split(",")[0].replace("Visitor: ", "");
             map.put(name, "1");
         }
          return List.of(
