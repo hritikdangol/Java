@@ -3,7 +3,6 @@ import java.util.List;
 
 class TourismReportGenerator {
     void generateOverallReport(List<TouristDataSource> dataSources, DataProcessor processor) {
-
         System.out.println("Generating overall tourism report...");
         for (TouristDataSource dataSource : dataSources) {
             List<String> data;

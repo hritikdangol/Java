@@ -1,6 +1,5 @@
 import java.util.List;
 class HotelRegistrationsDataSource extends TouristDataSource{
-
     HotelRegistrationsDataSource(){
         super("Kathmandu Hotels Registrations");
     }
