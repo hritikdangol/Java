@@ -17,22 +17,17 @@ class UniqueVisitorCounter implements DataProcessor {
         for (int i = 0; i < rawData.size(); i++) {
             String data = rawData.get(i);
             String name = data.split(",")[0]
-                    .replace("Visitor: ", "")
-                    .replace("Guest: ", "");
-
+                    .replace("Visitor: ", "");
             map.put(name, "1");
         }
-
          return List.of(
             "Unique Visitors Count: " + map.size(),
             "Names: " + map.keySet()
         );
     }
-
     public static void main(String[] args) {
 
         UniqueVisitorCounter c1 = new UniqueVisitorCounter();
-
         List<String> data = List.of( "Visitor: John Doe, USA", "Visitor: John Doe, USA" );
         try {
             c1.process(List.of());
