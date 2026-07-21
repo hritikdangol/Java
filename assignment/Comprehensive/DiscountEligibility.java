@@ -24,15 +24,15 @@ class Customer {
         return member;
     }
     void calculateDiscount() {
-        if (member && purchaseAmount >1000) {
+        if (member==true && purchaseAmount >1000) {
             finalAmount = purchaseAmount - (purchaseAmount * 0.15);
         } else {
             finalAmount = purchaseAmount;
         }
     }
     void display() {
-        System.out.println("Customer Name: " + name);
-        System.out.println("Member: " + member);
+        System.out.println("Customer Name: " + getName());
+        System.out.println("Member: " + isMember());
         System.out.println("Purchase Amount: " + purchaseAmount);
         System.out.println("Final Amount Payable: " + finalAmount);
     }

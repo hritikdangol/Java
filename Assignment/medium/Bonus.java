@@ -4,7 +4,7 @@ public class Bonus {
     double salary;
     double experience;
     Scanner sc= new Scanner(System.in);
-     Bonus()  ///constructor without parameter 
+     Bonus() ///constructor without parameter 
      {
      System.out.print("Enter name: ");
     name= sc.nextLine();

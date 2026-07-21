@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class SimpleInterest {
 
     private double principal;
@@ -36,8 +37,11 @@ public class SimpleInterest {
 
  class CalculationPTR {
     public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter princial");
+double principal= sc.nextDouble();
 
-        SimpleInterest s1 = new SimpleInterest(10000, 5, 2);
+        SimpleInterest s1 = new SimpleInterest(principal, 5, 2);
         System.out.println("Principal: " + s1.getPrincipal());
         System.out.println("Rate: " + s1.getRate());
         System.out.println("Time: " + s1.getTime());
