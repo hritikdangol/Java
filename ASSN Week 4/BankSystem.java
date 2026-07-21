@@ -21,8 +21,8 @@ class Bankaccount {
             System.out.println("Amount withdrawn: " + amount);
         }
     }
-    public void setAccountNumber(int acn){
-        this.accountNumber=acn;
+    public void setAccountNumber(int an){
+        this.accountNumber=an;
     }
     public double getAccountNumber(){
         return accountNumber;

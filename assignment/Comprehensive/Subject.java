@@ -28,7 +28,6 @@ public class Subject {
  class GradeAssignment {
     public static void main(String[] args) {
         Subject[] s1 = new Subject[5];
-
         s1[0] = new Subject("Math", 95);
         s1[1] = new Subject("Science", 82);
         s1[2] = new Subject("English", 74);

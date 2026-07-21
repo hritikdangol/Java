@@ -58,5 +58,9 @@ public class GradeBook{
      GraduateStudent s2=new GraduateStudent("Ranil",57,new double[]{58,26,44},"Habits");
     s2.displayTitle();
     s2.calculateAverage();
+    double[] marks={20,30,40};
+     GraduateStudent s3=new GraduateStudent("kushal",56,marks,"hehe");
+       s3.displayTitle();
+    s3.calculateAverage();
     }
 }

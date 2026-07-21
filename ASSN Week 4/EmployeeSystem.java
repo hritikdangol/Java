@@ -79,15 +79,13 @@ Scanner sc= new Scanner(System.in);
     sc.nextLine();
     if (choose==1)
     {
-    manager m = new manager(null, 0, 0);
     System.out.println("Enter your name");
     String name= sc.nextLine();
-    m.setname(name);
     System.out.println("Enter your id");
     int id= sc.nextInt();
-    m.setid(id);
     System.out.println("Enter your basesalary");
     double baseSalary= sc.nextDouble();
+    manager m = new manager(name, id, baseSalary);
     System.out.println("Enter your bonus");
     double bonus= sc.nextDouble();
     m.setbonus(bonus);
@@ -109,7 +107,6 @@ else if(choose==0)
     d.setid(id);
     System.out.println("Enter your basesalary");
     double baseSalary= sc.nextDouble();
-    d.baseSalary=baseSalary;
     System.out.println("Overtime hours?");
     int overtime= sc.nextInt();
     d.setovertime(overtime);    
