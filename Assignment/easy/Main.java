@@ -1,7 +1,7 @@
 class CarDetails{
         String brand;
         int year;
-        CarDetails(String b, int y)
+        CarDetails(String b, int y)//constructor
         {
             this.brand=b;
             this.year=y;
